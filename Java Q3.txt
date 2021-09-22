@@ -1,0 +1,38 @@
+3]
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.Scanner;
+class Task3
+{
+	public static void main (String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int option, side, length, breadth;
+		double area=0, radius;
+		option = sc.nextInt();
+		System.out.println("Press 1 for Area of Square \n Press 2 for Area of Circle \n Press 3 for Area of Rectangle \n");
+		
+		switch(option){
+		    case 1: 
+		        side = sc.nextInt();
+		        area = side*side;
+		        System.out.println("The area is: "+area);
+		        break;
+		    case 2:
+		        radius = sc.nextInt();
+		        area = 3.14 * radius * radius;
+		        System.out.println("The area is: "+area);
+		        break;
+		    case 3:
+		        length = sc.nextInt();
+		        breadth = sc.nextInt();
+		        area = length * breadth;
+		        System.out.println("The area is: "+area);
+		        break;
+		    default:
+		        System.out.println("Invalid Choice");
+		        break;
+		}
+	}
+}
